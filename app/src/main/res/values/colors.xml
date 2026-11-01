@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="paper">#FFFFFF</color>
+    <color name="ink">#000000</color>
+    <color name="ink_muted">#4A4A4A</color>
+    <color name="ink_faint">#777777</color>
+    <color name="wash">#EBEBEB</color>
+    <color name="pressed">#D6D6D6</color>
+</resources>

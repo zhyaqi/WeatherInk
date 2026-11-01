@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paper"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="22dp"
+        android:paddingTop="20dp"
+        android:paddingRight="22dp"
+        android:paddingBottom="28dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/city_management"
+                android:textColor="@color/ink"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/backButton"
+                style="@style/Button.Outline"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:text="@string/back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="搜索城市名称或 QWeather Location ID。无需开启 GPS。"
+            android:textColor="@color/ink_muted"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/searchInput"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit"
+                android:hint="例如：北京、杭州、101010100"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/ink"
+                android:textColorHint="@color/ink_faint"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/searchButton"
+                style="@style/Button.Primary"
+                android:layout_width="88dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/search" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="24dp"
+            android:textColor="@color/ink_muted"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/ink" />
+
+        <TextView
+            style="@style/Text.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="已保存城市" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="点击切换；长按删除"
+            android:textColor="@color/ink_muted"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/savedCitiesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" />
+
+        <TextView
+            style="@style/Text.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="搜索结果"
+            android:visibility="gone"
+            android:id="@+id/resultsTitle" />
+
+        <LinearLayout
+            android:id="@+id/resultsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            style="@style/Button.Outline"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="26dp"
+            android:text="检查 API 设置" />
+    </LinearLayout>
+</ScrollView>

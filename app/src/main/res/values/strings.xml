@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">墨天气</string>
+    <string name="app_kicker">WEATHER INK · 墨</string>
+    <string name="refresh">刷新天气</string>
+    <string name="change_city">切换城市</string>
+    <string name="city_management">城市管理</string>
+    <string name="settings">API 设置</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="search">搜索</string>
+    <string name="qweather_credit">天气数据由和风天气 QWeather 提供</string>
+</resources>
