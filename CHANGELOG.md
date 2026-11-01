@@ -18,3 +18,9 @@
 ### 安装
 
 下载 `WeatherInk-v1.0.2.apk` 后侧载安装。APK 使用 Android 调试签名，适合个人设备安装测试；正式上架应用商店前需要更换为发布签名。
+
+SHA-256：
+
+```text
+067775A1FE5B522ED21675DFAFEA4EAEC86C22E3C22853CC42B82FF22A955EBC
+```
