@@ -63,3 +63,5 @@ adb install -r app\build\outputs\apk\debug\app-debug.apk
 - `Preferences`：本机设置、城市和天气缓存
 
 应用最低支持 Android 6.0，已在 Android 11 的 N10 Touch 上验证，使用原生 Java 和 Android 平台控件实现。
+
+版本记录见 [CHANGELOG.md](CHANGELOG.md)。
